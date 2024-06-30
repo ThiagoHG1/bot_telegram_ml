@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-url = 'https://www.mercadolivre.com.br/nintendo-switch-32gb-mario-kart-8-deluxe-cor-vermelho-neon-azul-neon-e-preto/p/MLB13576607#polycard_client=storefronts&wid=MLB4592661128&sid=storefronts&type=product&tracking_id=116f1f16-7350-4a7b-91ee-ce01d178bb6c&source=eshops'
+url = 'https://www.mercadolivre.com.br/guitarra-eletrica-strinberg-sts-series-sts100-stratocaster-de-tilia-metallic-blue-brilhante-com-diapaso-de-bordo/p/MLB17453028#polycard_client=recommendations_home_navigation-trend-recommendations'
 response = requests.get(url)
 soup = BeautifulSoup(response.content, 'html.parser')
 

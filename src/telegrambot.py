@@ -16,7 +16,7 @@ def enviar_mensagem():
 
     texto = f"""Produto: {nome_atual}
 Preço anterior: R${preco_anterior}
-Preço atual: R${preco_atual}
+Preço atual: {preco_atual}
 Desconto: {desconto_atual}
 Link: {scrapping.url}"""
     
