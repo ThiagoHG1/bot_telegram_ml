@@ -7,22 +7,21 @@
     <link href="styles.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
-    <!-- Seção contendo barra de menu -->
-    <section class="menu-bar">
-        <div class="bar-options-row">
-            <a href="#" id="Menu-link" title="Menu">Menu</a>
-            <a href="#" id="bot-link" title="bot link">Bot</a>
-            <a href="#" id="Account-link" title="Account">Account</a>
-        </div>
-    </section>
+    <!-- Barra de Menu -->
+    <nav class="menu-bar">
+        <a href="#" id="Menu-link">Menu</a>
+        <a href="#" id="bot-link">Bot</a>
+        <a href="#" id="Account-link">Account</a>
+    </nav>
 
+    <!-- Seção para adicionar produto -->
     <section class="add-product">
         <div class="add-product-row">
             <div id="product-url-input">
-                <p>product url <input type="text"></p>
+                <p>Product URL <input type="text" id="url-input" ></p>
             </div>
             <div>
-                <button id="add-product-button" onclick="addproduct()">ADD</button>
+                <button id="add-product-button" onclick="addProduct()">ADD</button>
             </div>
         </div>
     </section>

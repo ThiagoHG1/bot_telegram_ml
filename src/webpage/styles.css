@@ -1,43 +1,56 @@
 html, body {
-    width: 100%;
+    box-sizing: border-box;
     height: 100%;
-    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0 auto;
     padding: 0;
+}
+
+body {
+    align-items: center;
     background-color: rgb(40, 40, 40);
-    color: #fff;
     font-family: Arial, sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
 }
 
 .menu-bar {
+    display: block;
     background-color: #333;
-    padding: 10px 0; 
-    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
 }
 
-.bar-options-row {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.bar-options-row a {
+.menu-bar a {
     color: #fff;
-    text-decoration: none; 
-    margin: 0 20px;
-    font-size: 16px;
+    float: right;
+    text-decoration: none;
+    display: inherit;
+    padding: 20px 16px;
 }
 
-.bar-options-row a:hover {
-    text-decoration: underline;
+.menu-bar a:hover {
+    transition: 0.5s;
+    color: black;
 }
 
 .add-product {
-    margin-top: 1%;
-    margin-left: 10%;
-    width: 80%;
+    display: flex;
+    align-content: center;
+    width: 0 auto;
     background-color: #f0f0f0;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .add-product-row {
@@ -46,14 +59,14 @@ html, body {
     align-items: center;
 }
 
-#product-name-input, #product-url-input {
+#product-url-input {
     flex: 1;
     padding: 0 10px;
 }
 
 #add-product-button {
-    background-color: #4CAF50;
-    color: white;
+    background-color: #ee0fdb;
+    color: rgb(248, 248, 248);
     border: none;
     padding: 10px 20px;
     text-align: center;
@@ -65,5 +78,6 @@ html, body {
 }
 
 #add-product-button:hover {
-    background-color: #45a049;
+    transition: 0.5s;
+    background-color: #7e2176;
 }
